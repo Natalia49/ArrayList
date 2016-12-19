@@ -55,7 +55,7 @@ public class Array<T> implements IArray<T> {
 
     private void checkSize() {
         if(vector.length == 0) {
-            vector = (T[]) new Object[1];
+            vector = new Object[1];
         }
         if(vector.length == currentLength) {
             T[] array = copy(vector, vector.length*2);
